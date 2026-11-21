@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema web de Control de Rescate y Adopción de animales">
+  <title>Rescates registrados | Control de Rescate y Adopción</title>
+</head>
+<body>
+  <header>
+    <h1>🐾 Control de Rescate y Adopción</h1>
+    <p>Sistema de gestión del refugio de animales</p>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar animal</a></li>
+        <li><a href="rescates.html" aria-current="page">Rescates registrados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Casos de rescate registrados</h2>
+      <p>Listado de los animales ingresados al refugio. Para añadir un caso nuevo vaya a <a href="reportar.html">Reportar animal</a>.</p>
+
+      <article>
+        <h3>Tabla general de casos</h3>
+        <table border="1">
+          <caption>Registro de animales rescatados</caption>
+          <thead>
+            <tr>
+              <th scope="col">Código</th>
+              <th scope="col">Caso</th>
+              <th scope="col">Categoría</th>
+              <th scope="col">Urgencia</th>
+              <th scope="col">Estado al encontrarlo</th>
+              <th scope="col">Situación actual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>R-001</td><td>Perrito de la Av. Metropolitana</td><td>Perros</td><td>Alta</td><td>Herida en pata trasera, deshidratado.</td><td>En tratamiento</td></tr>
+            <tr><td>R-002</td><td>Gatita del mercado</td><td>Gatos</td><td>Media</td><td>Desnutrición leve, pulgas.</td><td>En observación</td></tr>
+            <tr><td>R-003</td><td>Tortuga marina</td><td>Fauna Silvestre</td><td>Alta</td><td>Enredada en red de pesca.</td><td>En tratamiento</td></tr>
+            <tr><td>R-004</td><td>Cachorro del parque</td><td>Perros</td><td>Baja</td><td>Sano, abandonado en una caja.</td><td>Disponible para adopción</td></tr>
+            <tr><td>R-005</td><td>Gato naranja</td><td>Gatos</td><td>Baja</td><td>Sin lesiones, muy dócil.</td><td>Adoptado</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h3>Casos por categoría</h3>
+        <ul>
+          <li>Perros
+            <ul>
+              <li>Perrito de la Av. Metropolitana</li>
+              <li>Cachorro del parque</li>
+            </ul>
+          </li>
+          <li>Gatos
+            <ul>
+              <li>Gatita del mercado</li>
+              <li>Gato naranja</li>
+            </ul>
+          </li>
+          <li>Fauna Silvestre
+            <ul>
+              <li>Tortuga marina</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto: refugio@rescateadopcion.ec | Tel: 0999 999 999</p>
+    <p>Portoviejo, Manabí, Ecuador</p>
+    <p>&copy; 2026 Control de Rescate y Adopción. Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos.</p>
+  </footer>
+</body>
+</html>

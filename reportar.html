@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema web de Control de Rescate y Adopción de animales">
+  <title>Reportar animal | Control de Rescate y Adopción</title>
+</head>
+<body>
+  <header>
+    <h1>🐾 Control de Rescate y Adopción</h1>
+    <p>Sistema de gestión del refugio de animales</p>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html" aria-current="page">Reportar animal</a></li>
+        <li><a href="rescates.html">Rescates registrados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Reportar un nuevo animal rescatado</h2>
+      <p>Complete el formulario con los datos del caso. Los campos marcados con * son obligatorios.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos del caso</legend>
+
+          <p>
+            <label for="titulo">Título del caso o nombre provisional *</label><br>
+            <input type="text" id="titulo" name="titulo" maxlength="80" placeholder="Ej: Perrito de la Av. Metropolitana" required>
+          </p>
+
+          <p>
+            <label for="categoria">Categoría *</label><br>
+            <select id="categoria" name="categoria" required>
+              <option value="">-- Seleccione una categoría --</option>
+              <option value="perros">Perros</option>
+              <option value="gatos">Gatos</option>
+              <option value="fauna-silvestre">Fauna Silvestre</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Nivel de urgencia médica *</legend>
+          <p>
+            <input type="radio" id="urgencia-alta" name="urgencia" value="alta" required>
+            <label for="urgencia-alta">Alta</label>
+          </p>
+          <p>
+            <input type="radio" id="urgencia-media" name="urgencia" value="media">
+            <label for="urgencia-media">Media</label>
+          </p>
+          <p>
+            <input type="radio" id="urgencia-baja" name="urgencia" value="baja">
+            <label for="urgencia-baja">Baja</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Descripción</legend>
+          <p>
+            <label for="descripcion">Descripción detallada del estado en que se encontró *</label><br>
+            <textarea id="descripcion" name="descripcion" rows="6" cols="50" placeholder="Describa heridas, comportamiento, lugar del hallazgo, etc." required></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Registrar rescate</button>
+          <button type="reset">Limpiar formulario</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto: refugio@rescateadopcion.ec | Tel: 0999 999 999</p>
+    <p>Portoviejo, Manabí, Ecuador</p>
+    <p>&copy; 2026 Control de Rescate y Adopción. Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos.</p>
+  </footer>
+</body>
+</html>
